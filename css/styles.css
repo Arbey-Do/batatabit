@@ -42,23 +42,64 @@ html {
 }
 
 body {
+  background-color: var(--off-white);
   font-size: var(--normal);
   line-height: var(--normal-line-hight);
 }
 
-/* Utilities */
+/* Section Utilities */
 
 .w286-center {
   width: 286px;
   margin: 0 auto;
 }
 
+.section-title {
+  font-size: var(--large);
+  line-height: 2.6rem;
+}
+
+.section-title_black {
+  color: var(--warm-black);
+}
+
+.section-title_white {
+  color: var(--just-white)
+}
+
+/* Text utilities */
+
+.text {
+  font-weight: 500;
+}
+
+.text_soft-orange {
+  color: var(--soft-orange);
+}
+
+.text_grey {
+  color: var(--grey);
+}
+
+/* Table Utilities */
+
+.table-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 23.44px;
+}
+
+.table-title_orange {
+  color: #FF9536;
+}
+
+/* header section */
+
 .page-header {
   width: 100%;
   min-width: 320px; /* No se hara mas pequeño que 320px */
   text-align: center;
   background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
-  color: #FFF;
 }
 
 .page-header__container {
@@ -83,15 +124,8 @@ body {
   max-width: 900px;
 }
 
-.page-main-title {
-  font-size: var(--large);
-  line-height: 2.6rem;
-}
-
 .page-header__text {
-  font-weight: 500;
   margin-top: 2.4rem;
-  color: var(--soft-orange);
 }
 
 .page-header__button {
@@ -116,5 +150,45 @@ body {
   background-image: url('../assets/icons/arrow-down-black.svg');
 }
 
+/* bitcoin exchange section */
 
+.bitcoin-exchange {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* text-align: star; by default*/
+}
 
+.bitcoin-exchange__img {
+  margin-top: 5.8rem;
+}
+
+.bitcoin-exchange__title {
+  margin-top: 4.4rem;
+}
+
+.bitcoin-exchange__text {
+  margin-top: 2.4rem;
+}
+
+.tables-section {
+  margin-top: 50px;
+  text-align: start;
+}
+
+.coins-table-container {
+  width: 197px;
+  padding-left: 1.2rem;
+}
+
+.coins__table {
+  margin-top: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.coins__table .coin-type {
+  font-size: 1.6rem;
+  padding: 1rem 1.2rem;
+  color: #B5B0AC;
+}
