@@ -381,8 +381,8 @@ body {
 .plans-card__recomended-tag {
   position: absolute;
   top: -1.6rem;
-  left: 4.5rem;
-  width: 10.1rem;
+  left: calc(50% - 5rem); /* La mitad del ancho del elemento  */
+  width: 10rem;
   padding: 0.8rem;
   background-color: var(--bitcoin-orange);
   border-radius: 0.8rem;
