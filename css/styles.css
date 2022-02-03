@@ -358,13 +358,17 @@ body {
 }
 
 .plans-card__container {
-  margin-top: 5rem;
-  margin-bottom: 6.4rem;
-  /* Esto es solo para que la card se mire en el centro */
-  /* ********************* */
+  height: 29rem;
+  padding-left: 1rem; /*Para dejar que se mire la sombra izquierda de la card*/
+  padding-right: 1rem; /*Para dejar que se mire la sombra derecha de la card*/
+  margin-top: 2.9rem; /* 29 + 21 = 50 */
+  margin-bottom: 4.3rem; /* 43 + 21 = 64 */
   display: flex;
-  justify-content: center;
-  /* ********************* */
+  align-items: center;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 8px;
 }
 
 /* plans card styles */
@@ -380,7 +384,7 @@ body {
 
 .plans-card__recomended-tag {
   position: absolute;
-  top: -1.6rem;
+  top: -1.5rem;
   left: calc(50% - 5rem); /* La mitad del ancho del elemento  */
   width: 10rem;
   padding: 0.8rem;
@@ -402,24 +406,24 @@ body {
 }
 
 .plans-card__price {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
   font-family: 'Inter', sans-serif;
   font-size: 5.2rem;
   font-weight: 700;
   line-height: 6.3rem;
-  letter-spacing: -0.08em;
+  letter-spacing: -3px;
   color: var(--just-black);
-  position: relative;
   margin-top: 0.8rem;
 }
 
 .plans-card__price .dolar {
+  margin-top: 0.4rem;
   font-size: 1.2rem;
   line-height: 1.5rem;
   font-weight: 500;
   color: #363636;
-  position: absolute;
-  top: 0.7rem;
-  left: 4rem;
 }
 
 .plans-card__text {
