@@ -223,18 +223,19 @@ body {
   margin-top: 1rem;
   font-family: 'Inter', sans-serif;
   text-align: start;
-  border-spacing: 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
   border-radius: 0.8rem;
   overflow: hidden;
 }
 
-.table td {
+.table-grid__item {
   background-color: var(--just-white);
 }
 
 .table .currency-name,
 .table .commission-name {
-  width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 1.2rem;
@@ -243,7 +244,6 @@ body {
 
 .table .currency-value,
 .table .commission-value {
-  /* width: 50%; */
   display: flex;
   align-items: center;
   gap: 10.5px;
@@ -257,7 +257,7 @@ body {
   justify-content: center;
 }
 
-.table .trending {
+.table-grid__item .trending {
   width: 12px;
   height: 13px;
   display: inline-block;
@@ -266,12 +266,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.down {
-  background-image: url(./../assets/icons/trending-down.svg);
-}
-
-.up {
+.table-grid__item .up {
   background-image: url(./../assets/icons/trending-up.svg);
+}
+.table-grid__item .down {
+  background-image: url(./../assets/icons/trending-down.svg);
 }
 
 .table-container .nationality-value {
@@ -281,8 +280,6 @@ body {
   font-size: 1.2rem;
   border-radius: 8px;
 }
-
-
 
 .benefits {
   background-color: var(--warm-black);
