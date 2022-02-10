@@ -1,0 +1,38 @@
+.page-header {
+  height: 26.8rem;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.bitcoin-exchange {
+  width: 33.3rem;
+}
+
+.exchange-tables-section {
+  gap: 10rem;
+  padding-left: 7rem;
+}
+
+.benefits__container {
+  width: 35rem;
+}
+
+.plans__container {
+  width: 35rem;
+}
+
+.plans-card__container {
+  padding-left: 9rem;
+  padding-right: 9rem;
+  gap: 9rem;
+}
+
+.social-links {
+  flex-direction: row;
+  align-items: center;
+  width: 20rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
